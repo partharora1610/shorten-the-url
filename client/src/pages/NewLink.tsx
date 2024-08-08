@@ -9,7 +9,7 @@ const NewLink = () => {
   const [searchParams] = useSearchParams()
   const mode = searchParams.get("mode")
 
-  return <div>{mode == "create" ? <NewLinkForm /> : <EditLinkForm />}</div>
+  return <div>{mode == "edit" ? <EditLinkForm /> : <NewLinkForm />}</div>
 }
 
 const NewLinkForm = () => {
